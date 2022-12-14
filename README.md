@@ -2,10 +2,10 @@
 exponiendo 1 herramienta ci but with the program to cut big file that vscode cannot open
 
 * * *
-
 **aun sigue en desarrollo porque solo lo hice para practicar la implementacion de buenas practicas y otras metodologias**
 * * *
 
+:hushed: howver if you wanna contribuite in this code can you send me your email. :sweat_smile: everyone is welcome
 <p align="center">
     <img src="https://educacion30.b-cdn.net/wp-content/uploads/2020/07/PeacefulVictoriousDachshund-max-1mb-1.gif" alt="invitados estan de participar de este mini proyecto"></p>
 
