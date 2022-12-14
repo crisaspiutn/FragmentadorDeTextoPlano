@@ -32,8 +32,15 @@ do
                 printf_g todos los test pasaron. voy a auto implementarlos
                 # cp -r 
                 printf_v esto quiero copiar alla $ruta_fix
-                mkdir "../../../src/modules/$ruta_fix"
-                cp  "./$lista" "../../../src/modules/$ruta_fix/"
+                existe "../../../src/modules/$ruta_fix"
+                if [[ $? -eq 1 ]]; then
+                    printf_r ya existe no voy a crearlo
+                else
+                    printf_r procedo a crearlo
+                    mkdir "../../../src/modules/$ruta_fix"
+                fi
+                lista=$(ls | grep .hpp) # the cpp solo lo use para probarlo. however the module that i go to implement is the file with extend .hpp
+                cp  "./$lista" "../../../src/modules/$ruta_fix/" # so i go to proced to copy the file of .hpp to modules of sources
             else
                 printf_r enviar por correo los fallos al desarrollador
             fi
@@ -41,5 +48,6 @@ do
 
         cd ..                   # regreso
     fi
+echo lista_modulos_unitarios: $lista_modulos_unitarios
 done
 
